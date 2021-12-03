@@ -20,6 +20,12 @@ body {
   transform-origin: bottom;
 }
 
+#hat {
+  animation: hat 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
 @keyframes wheel {
   from {
     transform: rotateZ(0deg);
@@ -31,10 +37,10 @@ body {
 
 @keyframes bike {
   from {
-    transform: rotateZ(0deg);
+    transform: rotateX(0deg);
   }
   to {
-    transform: rotateZ(20deg);
+    transform: rotateX(20deg);
   }
 }
 
